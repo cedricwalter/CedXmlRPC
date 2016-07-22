@@ -19,3 +19,6 @@ New in 3.4.8
 + using composer to keep latest version of phpxmlrpc up to date (4.1.0) in a new library "cedxmlrpc"
 + unit testing introduced
 + Available in GitHub
+
+To Install
+Download the package https://github.com/cedricwalter/CedXmlRPC/raw/master/pkg_xmlrpc_j33_j34_3.4.8.zip and upload using Joomla installer.
