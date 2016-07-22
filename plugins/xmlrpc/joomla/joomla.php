@@ -93,7 +93,7 @@ class plgXMLRPCJoomla extends JPlugin
 
 		return array
 		(
-			'blogger.getUsersBlogs'  => array('function' => array(c, 'getUserBlogs'), 'signature' => null),
+			'blogger.getUsersBlogs'  => array('function' => array($this->common, 'getUserBlogs'), 'signature' => null),
 			'blogger.getUserInfo'    => array('function' => array($this->common, 'getUserInfo'), 'signature' => null),
 			'blogger.getRecentPosts' => array('function'  => array($this->common, 'getRecentPosts'),
 			                                  'signature' => null

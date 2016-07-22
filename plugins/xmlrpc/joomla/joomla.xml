@@ -17,14 +17,15 @@
         <folder>xml</folder>
         <folder>helpers</folder>
     </files>
-    <languages>
-        <language tag="en-GB">en-GB.plg_xmlrpc_joomla.ini</language>
-        <language tag="en-GB">en-GB.plg_xmlrpc_joomla.sys.ini</language>
-        <language tag="ja-JP">ja-JP.plg_xmlrpc_joomla.ini</language>
-        <language tag="ja-JP">ja-JP.plg_xmlrpc_joomla.sys.ini</language>
-        <language tag="ja-JU">ja-JU.plg_xmlrpc_joomla.ini</language>
-        <language tag="ja-JU">ja-JU.plg_xmlrpc_joomla.sys.ini</language>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_xmlrpc_joomla.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_xmlrpc_joomla.sys.ini</language>
+        <language tag="ja-JP">ja-JP/ja-JP.plg_xmlrpc_joomla.ini</language>
+        <language tag="ja-JP">ja-JP/ja-JP.plg_xmlrpc_joomla.sys.ini</language>
+        <language tag="ja-JU">ja-JU/ja-JU.plg_xmlrpc_joomla.ini</language>
+        <language tag="ja-JU">ja-JU/ja-JU.plg_xmlrpc_joomla.sys.ini</language>
     </languages>
+
     <config>
         <fields name="params">
             <fieldset name="basic" label="PLG_XMLRPC_JOOMLA_BASIC_OPTION"

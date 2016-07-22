@@ -163,8 +163,6 @@ class xmlRpcCommon
 	 */
 	public function getRecentPosts()
 	{
-		global $xmlrpcArray;
-
 		$args = func_get_args();
 		if (func_num_args() < 3)
 		{
@@ -227,7 +225,7 @@ class xmlRpcCommon
 			}
 		}
 
-		return new PhpXmlRpc\Response(new PhpXmlRpc\Value($articles, $xmlrpcArray));
+		return new PhpXmlRpc\Response(new PhpXmlRpc\Value($articles, PhpXmlRpc\Value::$xmlrpcArray));
 	}
 
 	/**
