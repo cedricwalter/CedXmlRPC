@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" version="3.0" method="upgrade">
     <name>com_xmlrpc</name>
-    <creationDate>2016-07-22</creationDate>
+    <creationDate>2016-12-31</creationDate>
     <author>Galaxiis, Yoshiki Kozaki</author>
     <authorEmail>galaxiiscom@gmail.com;info@joomler.net</authorEmail>
     <authorUrl>http://www.galaxiis.com, http://www.joomler.net</authorUrl>
     <copyright>Copyright (C) 2016 galaxiis.com. (C) 2007 - 2013 Yoshiki Kozaki All rights reserved.</copyright>
     <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-    <version>3.4.8</version>
+    <version>3.5.1</version>
 
 
     <description>COM_XMLRPC_DESCRIPTION</description>
@@ -18,7 +18,6 @@
         <filename>router.php</filename>
         <folder>models</folder>
         <folder>helpers</folder>
-        <folder>libraries</folder>
         <folder>views</folder>
     </files>
     <languages folder="language/en-GB">

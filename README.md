@@ -1,6 +1,6 @@
-# CedXmlRPC
+# CedXmlRPC for Joomla
 
-Allow to use Open Live Writer or ScribeFire or any other XMLRPC client with Joomla 3.4 up to 3.6
+Allow to use Open Live Writer or ScribeFire or any other XMLRPC client with [Joomla!](https://www.joomla.org) 3.x
 
 Support following API
 * Blogger
@@ -21,4 +21,4 @@ New in 3.4.8
 + Available in GitHub
 
 To Install
-Download the package https://github.com/cedricwalter/CedXmlRPC/raw/master/pkg_xmlrpc_j33_j34_3.4.8.zip and upload using Joomla installer.
+Download the repository as zip and upload using Joomla installer.

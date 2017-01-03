@@ -31,15 +31,15 @@ class JFormFieldGalaxiisBar extends JFormField
 
 		$html  = '';
 		$style = 'style="margin: 0 5px;"';
-		$html .= '<a class="btn btn-info" href="https://www.galaxiis.com/'.$shortId.'-showcase" target="_blank" ' . $style . '><span class="icon-home"></span> ' . JText::_('JSITE') . '</a>';
-		$html .= '<a class="btn btn-success" href="https://www.galaxiis.com/'.$shortId.'-download-club" target="_blank" ' . $style . '><span class="icon-download"></span> ' . JText::_('Premium') . '</a>';
+		$html .= '<a class="btn btn-info" href="https://www.galaxiis.com/'.$shortId.'-showcase/" target="_blank" ' . $style . '><span class="icon-home"></span> ' . JText::_('JSITE') . '</a>';
+		$html .= '<a class="btn btn-success" href="https://www.galaxiis.com/'.$shortId.'-download-club/" target="_blank" ' . $style . '><span class="icon-download"></span> ' . JText::_('Premium') . '</a>';
 		$html .= '<a class="btn btn-success" href="https://www.galaxiis.com/tickets" target="_blank" ' . $style . '><span class="icon-support"></span> ' . JText::_('Tickets') . '</a>';
 
-		$html .= '<a class="btn btn-primary" href="https://www.galaxiis.com/'.$shortId.'-demo" target="_blank" ' . $style . '><span class="icon-eye"></span> ' . JText::_('Demo') . '</a>';
-		$html .= '<a class="btn btn-primary" href="https://www.galaxiis.com/'.$shortId.'-jed" target="_blank" ' . $style . '><span class="icon-joomla"></span> ' . JText::_('Vote') . '</a>';
+		$html .= '<a class="btn btn-primary" href="https://www.galaxiis.com/'.$shortId.'-demo/" target="_blank" ' . $style . '><span class="icon-eye"></span> ' . JText::_('Demo') . '</a>';
+		$html .= '<a class="btn btn-primary" href="https://www.galaxiis.com/'.$shortId.'-jed/" target="_blank" ' . $style . '><span class="icon-joomla"></span> ' . JText::_('Vote') . '</a>';
 
 
-		$html .= '<a class="btn btn-primary" href="https://www.galaxiis.com/'.$shortId.'-doc" target="_blank" ' . $style . '><span class="icon-help"></span> ' . JText::_('Help') . '</a>';
+		$html .= '<a class="btn btn-primary" href="https://www.galaxiis.com/'.$shortId.'-doc/" target="_blank" ' . $style . '><span class="icon-help"></span> ' . JText::_('Help') . '</a>';
 		$html .= '<a class="btn btn-primary" href="https://www.galaxiis.com/forums" target="_blank" ' . $style . '><span class="icon-mail"></span> ' . JText::_('Forums') . '</a>';
 
 		return $html;

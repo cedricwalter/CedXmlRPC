@@ -1,7 +1,7 @@
 <?php
 /**
  * XMLRPC
- * @version      3.4.8
+ * @version      3.5.1
  * @package      XMLRPC for Joomla!
  * @copyright    Copyright (C) 2016 Galaxiis All rights reserved.
  * @license      http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL

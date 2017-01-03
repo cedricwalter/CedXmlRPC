@@ -2,13 +2,13 @@
 <extension version="3.0" type="plugin" group="xmlrpc" method="upgrade">
     <name>plg_xmlrpc_joomla</name>
 
-    <creationDate>2016-07-22</creationDate>
+    <creationDate>2016-12-31</creationDate>
     <author>Galaxiis, Yoshiki Kozaki</author>
     <authorEmail>galaxiiscom@gmail.com;info@joomler.net</authorEmail>
     <authorUrl>http://www.galaxiis.com, http://www.joomler.net</authorUrl>
     <copyright>Copyright (C) 2016 galaxiis.com. (C) 2007 - 2013 Yoshiki Kozaki All rights reserved.</copyright>
     <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-    <version>3.4.8</version>
+    <version>3.5.1</version>
 
     <description>PLGXMLRPC_JOOMLA_DESC</description>
     <files>

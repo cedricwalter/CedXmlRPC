@@ -1,7 +1,7 @@
 <?php
 /**
  * XMLRPC
- * @version      3.4.8
+ * @version      3.5.1
  * @package      XMLRPC for Joomla!
  * @copyright    Copyright (C) 2016 Galaxiis All rights reserved.
  * @license      http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
@@ -38,7 +38,7 @@
 defined('_JEXEC') or die();
 
 
-require JPATH_LIBRARIES. '/cedxmlrpc/vendor/autoload.php';
+require JPATH_LIBRARIES . '/cedxmlrpc/vendor/autoload.php';
 
 jimport('joomla.filesystem.file');
 jimport('joomla.filesystem.folder');
@@ -65,6 +65,7 @@ class xmlRpcMetaweblog
 	 * @param $images
 	 * @param $image_path
 	 * @param $file_path
+	 *
 	 * @since
 	 */
 	public function __construct(
@@ -82,7 +83,7 @@ class xmlRpcMetaweblog
 		$this->helper = $helper;
 
 		$this->overwrite        = $overwrite;
-		$this->useAbsoluteLinks = boolval($useAbsoluteLinks);
+		$this->useAbsoluteLinks = $useAbsoluteLinks;
 		$this->useFolder        = $useFolder;
 		$this->maxSize          = $maxSize;
 
@@ -220,12 +221,13 @@ class xmlRpcMetaweblog
 			return new PhpXmlRpc\Response(0, self::USER_CODE + 1, JText::_('PLG_XMLRPC_JOOMLA_FILENAME_EMPTY'));
 		}
 
-		$ext = JFile::getExt($file_name);
+		$ext          = JFile::getExt($file_name);
 		$isNotAllowed = !in_array($ext, $this->allowable);
 		$isNotIgnored = !in_array($ext, $this->ignored);
 		if ($isNotAllowed && $isNotIgnored)
 		{
-			error_log($ext . " " . $isNotAllowed . " is ". $isNotIgnored . JText::_('PLG_XMLRPC_JOOMLA_NOT_ALLOWED_FILETYPE'));
+			error_log($ext . " " . $isNotAllowed . " is " . $isNotIgnored . JText::_('PLG_XMLRPC_JOOMLA_NOT_ALLOWED_FILETYPE'));
+
 			return new PhpXmlRpc\Response(0, self::USER_CODE + 1, JText::_('PLG_XMLRPC_JOOMLA_NOT_ALLOWED_FILETYPE'));
 		}
 
@@ -252,6 +254,7 @@ class xmlRpcMetaweblog
 					if (!JFolder::create($destination))
 					{
 						error_log(JText::_('PLG_XMLRPC_JOOMLA_NOT_ABLE_TO_CREATE_FOLDER'));
+
 						return new PhpXmlRpc\Response(0, self::USER_CODE + 1,
 							JText::_('PLG_XMLRPC_JOOMLA_NOT_ABLE_TO_CREATE_FOLDER'));
 					}
@@ -282,17 +285,19 @@ class xmlRpcMetaweblog
 		if (!JFile::write($absoluteFileName, $file))
 		{
 			error_log(JText::_('PLG_XMLRPC_JOOMLA_NOT_ABLE_TO_WRITE_FILE'));
+
 			return new PhpXmlRpc\Response(0, self::USER_CODE + 1, JText::_('PLG_XMLRPC_JOOMLA_NOT_ABLE_TO_WRITE_FILE'));
 		}
 
 		if (!file_exists($absoluteFileName))
 		{
 			error_log(JText::_('PLG_XMLRPC_JOOMLA_NOT_ABLE_TO_UPLOAD_FILE'));
+
 			return new PhpXmlRpc\Response(0, self::USER_CODE + 1,
 				JText::sprintf('PLG_XMLRPC_JOOMLA_NOT_ABLE_TO_UPLOAD_FILE'));
 		}
 
-		if (!$this->useAbsoluteLinks)
+		if ($this->useAbsoluteLinks === "1")
 		{
 			$url = JUri::root(true);
 		}
@@ -300,6 +305,7 @@ class xmlRpcMetaweblog
 		{
 			$url = rtrim(JUri::root(), '/');
 		}
+
 
 		$root_path = str_replace(DIRECTORY_SEPARATOR, '/', JPATH_ROOT);
 		$url .= str_replace(array($root_path, '/'), array('', '/'), $absoluteFileName);
