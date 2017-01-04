@@ -20,5 +20,16 @@ New in 3.4.8
 + unit testing introduced
 + Available in GitHub
 
-To Install
-Download the repository as zip and upload using Joomla installer.
+[More details](https://www.galaxiis.com/cedxmlrpc-showcase/) 
+
+## Demo
+[https://www.galaxiis.com/cedxmlrpc-demo/](https://www.galaxiis.com/cedxmlrpc-demo/)
+
+## Documentation
+[https://www.galaxiis.com/cedxmlrpc-doc/](https://www.galaxiis.com/cedxmlrpc-doc/)
+
+## Joomla JED
+[https://www.galaxiis.com/cedxmlrpc-jed/](https://www.galaxiis.com/cedxmlrpc-jed/)
+
+## Download
+You need to [register](https://www.galaxiis.com/index.php/member-access?view=registration) for free and be logged-in to see the [download link](https://www.galaxiis.com/cedxmlrpc-download/)
