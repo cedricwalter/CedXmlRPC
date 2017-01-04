@@ -22,9 +22,6 @@ New in 3.4.8
 
 [More details](https://www.galaxiis.com/cedxmlrpc-showcase/) 
 
-## Demo
-[https://www.galaxiis.com/cedxmlrpc-demo/](https://www.galaxiis.com/cedxmlrpc-demo/)
-
 ## Documentation
 [https://www.galaxiis.com/cedxmlrpc-doc/](https://www.galaxiis.com/cedxmlrpc-doc/)
 
